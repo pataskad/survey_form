@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form FCC</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    </head>
+        
+    <body>
+        <div class="container">
+            <h1 id="title">Pataska Coaching Inquiry Form</h1>
+            <p id="description">The more information you give me, the more I can help you succeed!</p>
+
+            <form action="#" id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" name="name" placeholder="Enter your name here" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Enter your email address here" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="age">Age</label>
+                    <input id="number" type="number" min="18" max="126" name="age" placeholder="Age" required>
+                </div>
+                <div class="form-group">
+                    <label for="fav-team">Which option is your preferred choice?</label>
+                    <select id="dropdown">
+                        <option value="Rangers">Rangers</option>
+                        <option value="Raiders" selected>Raiders</option>
+                        <option value="Screaming Eagles">Screaming Eagles</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="radio-collection">Which option describes you the best?</label>
+                    <label for="introverted"><input value="introverted" type="radio" name="social-qualities">Introverted</label>
+                    <label for="extroverted"><input value="extroverted" type="radio" name="social-qualities">Extroverted</label>
+                    <label for="hybrid"><input value="hybrid" type="radio" name="social-qualities">Hybrid</label>
+                </div>
+                <div class="form-group">
+                    <label for="skills">Please check all skills you want to focus on:</label>
+                    <label for="strategy"><input value="Strategy" id="strategy" type="checkbox">Strategy</label>
+                    <label for="talent"><input value="Talent" id="talent" type="checkbox">Talent</label>
+                    <label for="motivation"><input value="Motivation" id="motivation" type="checkbox">Motivation</label>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments or Suggestions?</label>
+                    <textarea rows="10" cols="75" id="comments" name="comments" placeholder="Enter your comment here" class="input-textarea"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>   
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+    </body>
+</html>

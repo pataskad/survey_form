@@ -1,0 +1,59 @@
+body::before {
+    font-family: sans-serif;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: -1;
+    text-align: center;
+    background-image: url(https://images.pexels.com/photos/4534200/pexels-photo-4534200.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 2.5;
+}
+body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 2.5;
+}
+#title {
+    color: rgb(228, 74, 0);
+    font-size: 40px;
+    margin: 50px 0px 0px 0px;
+}
+#description {
+    color: rgb(228, 74, 0);
+    margin: 15px 0px 0px 0px;
+    font-style: italic;
+}
+#survey-form {
+    text-align: left;
+    display: inline-grid;
+    max-width: 720px;
+    padding: 10px 20px 40px 20px;
+    margin: 30px 0px 0px 0px;
+    background-color: rgba(27, 27, 50, 0.8);
+    color: floralwhite;
+    border-radius: 5px;
+}
+.form-group {
+    display: inline-grid;
+}
+#name, #email, #number, #dropdown {
+    padding: 8px;
+}
+#comments {
+    padding: 8px;
+    margin: 0px 0px 30px 0px;
+}
+#submit {
+    background-color: rgb(31, 245, 77);
+    color: floralwhite;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
